@@ -11,7 +11,7 @@ export function Header() {
   return (
     <>
       {/* Top Bar */}
-      <div className="bg-[#051E3D] text-white py-2 px-4">
+      <div className="bg-[#051E3D] text-white py-2 px-4 relative fixed">
         <div className="max-w-6xl mx-auto flex justify-between items-center text-sm">
           <div className="flex gap-6">
             <a href="tel:720-594-0593" className="hover:text-[#60A5FA] transition-colors">
@@ -31,18 +31,18 @@ export function Header() {
       <header className="bg-white border-b border-[#E5E7EB]">
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
           <Link href="/" className="flex items-center gap-2 flex-shrink-0">
-            <div className="w-12 h-12 relative">
+            <div className="w-16 h-12 relative">
               <Image
-                src="/images/nissi-logo-1.png"
+                src="/images/nissi-logo-3.png"
                 alt="Nissi Home Health Care"
-                width={48}
-                height={48}
+                width={50}
+                height={50}
                 className="object-contain"
               />
             </div>
-            <div className="hidden md:flex flex-col">
-              <span className="font-bold text-[#051E3D] text-lg">Nissi</span>
-              <span className="text-xs text-[#6B7280]">Home Health Care</span>
+            <div className="hidden md:flex flex-col text-primary">
+              <span className="font-bold text-xl">Nissi Home</span>
+              <span className="text-sm font-semibold">Home Health Care</span>
             </div>
           </Link>
 
@@ -59,7 +59,7 @@ export function Header() {
             </Link>
             <Link
               href="/contact"
-              className="bg-[#285EAB] text-white px-6 py-2 rounded-lg hover:bg-[#051E3D] transition-colors font-medium"
+              className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-[#051E3D] transition-colors font-medium"
             >
               Contact Us
             </Link>

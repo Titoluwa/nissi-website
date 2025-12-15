@@ -9,15 +9,24 @@ const geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Nissi Home Health Care - Professional In-Home Healthcare Services",
-  description:
-    "Compassionate, professional home health care services in Aurora, CO. Skilled nursing, physical therapy, and personalized care from trusted caregivers.",
+  description: "Compassionate, professional home health care services in Aurora, CO. Skilled nursing, physical therapy, and personalized care from trusted caregivers.",
   keywords: "home health care, skilled nursing, physical therapy, health aides, Aurora CO",
   openGraph: {
     title: "Nissi Home Health Care",
     description: "Professional in-home healthcare services with compassionate, certified caregivers.",
     type: "website",
   },
-    generator: 'v0.app'
+  icons: {
+    icon: [
+      {
+        url: "/images/nissi-logo-1.png",
+        type: "image/png+xml",
+      },
+    ],
+    shortcut: "/images/nissi-logo-1.png",
+    apple: "/images/nissi-logo-1.png",
+  },
+
 }
 
 export const viewport: Viewport = {

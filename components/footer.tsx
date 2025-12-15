@@ -11,7 +11,7 @@ export function Footer() {
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 relative">
               <Image
-                src="/images/nissi-logo-1.png"
+                src="/images/nissi-logo-3.png"
                 alt="Nissi Logo"
                 width={48}
                 height={48}
