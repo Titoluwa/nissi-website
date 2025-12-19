@@ -2,88 +2,9 @@ import Image from "next/image"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { SERVICES } from "@/lib/constant"
 
 export default function Services() {
-  const services = [
-    {
-      title: "Skilled Nursing",
-      description: "Professional nursing services provided by licensed registered nurses.",
-      details: [
-        "Wound care and dressing changes",
-        "Medication management and administration",
-        "Post-operative care and monitoring",
-        "Catheter care and management",
-        "Health monitoring and vital signs assessment",
-        "Patient education and health coaching",
-      ],
-      image: "/nurse-patient-care-medical-equipment.jpg",
-    },
-    {
-      title: "Physical Therapy",
-      description: "Personalized rehabilitation programs to improve mobility and strength.",
-      details: [
-        "Mobility and balance training",
-        "Strength and conditioning exercises",
-        "Pain management and rehabilitation",
-        "Fall prevention strategies",
-        "Post-injury and post-surgical recovery",
-        "Chronic condition management",
-      ],
-      image: "/physical-therapy-elderly-patient-exercise.jpg",
-    },
-    {
-      title: "Home Health Aides",
-      description: "Compassionate assistance with daily living activities.",
-      details: [
-        "Bathing and personal hygiene assistance",
-        "Dressing and grooming support",
-        "Meal preparation and feeding assistance",
-        "Light housekeeping and laundry",
-        "Mobility assistance and transfers",
-        "Companionship and emotional support",
-      ],
-      image: "/caregiver-assisting-elderly-person-activity.jpg",
-    },
-    {
-      title: "Personal Care Services",
-      description: "Support with personal hygiene and daily care needs.",
-      details: [
-        "Assistance with activities of daily living",
-        "Personal hygiene support",
-        "Grooming and appearance care",
-        "Toileting assistance",
-        "Incontinence management",
-        "Skin care and pressure ulcer prevention",
-      ],
-      image: "/senior-person-self-care-activities.jpg",
-    },
-    {
-      title: "Companionship Services",
-      description: "Meaningful social interaction and emotional support.",
-      details: [
-        "Social companionship and conversation",
-        "Emotional support and listening",
-        "Activity engagement and entertainment",
-        "Community outings and errands",
-        "Medication reminders and appointment support",
-        "Advocacy and communication with family",
-      ],
-      image: "/elderly-pair-happy-social-connection.jpg",
-    },
-    {
-      title: "Specialized Care Programs",
-      description: "Customized care for specific medical conditions.",
-      details: [
-        "Diabetes management support",
-        "Heart disease and hypertension care",
-        "Alzheimer's and dementia support",
-        "Parkinson's disease care",
-        "Post-stroke recovery programs",
-        "Chronic pain management",
-      ],
-      image: "/healthcare-professional-medical-consultation.jpg",
-    },
-  ]
 
   return (
     <div className="min-h-screen bg-white">
@@ -92,7 +13,7 @@ export default function Services() {
       {/* Hero Section */}
       <section className="relative h-[400px] md:h-[500px] w-full overflow-hidden">
         <Image
-          src="/healthcare-services-diverse-professionals.jpg"
+          src="/assets/services-2.jpg"
           alt="Our comprehensive healthcare services"
           fill
           className="object-cover"
@@ -108,7 +29,7 @@ export default function Services() {
       {/* Services Grid */}
       <section className="py-16 md:py-24 px-4">
         <div className="max-w-6xl mx-auto">
-          {services.map((service, index) => (
+          {SERVICES.map((service, index) => (
             <div key={service.title} className="mb-20">
               <div className={`grid md:grid-cols-2 gap-8 items-center ${index % 2 === 1 ? "md:grid-cols-2" : ""}`}>
                 {/* Image on left for even indexes, right for odd */}
@@ -146,7 +67,7 @@ export default function Services() {
                 </div>
               </div>
 
-              {index < services.length - 1 && <div className="my-16 border-b border-[#E5E7EB]"></div>}
+              {index < SERVICES.length - 1 && <div className="my-16 border-b border-[#E5E7EB]"></div>}
             </div>
           ))}
         </div>

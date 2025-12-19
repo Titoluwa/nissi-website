@@ -11,7 +11,7 @@ export default function About() {
       {/* Hero Section */}
       <section className="relative h-[400px] md:h-[500px] w-full overflow-hidden">
         <Image
-          src="/diverse-healthcare-team-outdoor-smiling.jpg"
+          src="/assets/team.jpg"
           alt="Our dedicated healthcare team"
           fill
           className="object-cover"
@@ -126,7 +126,7 @@ export default function About() {
             "Nissi Home Health Care transformed our experience. Their team brought not just medical expertise, but
             genuine care and compassion into our home. We felt heard, respected, and well-cared for."
           </blockquote>
-          <p className="text-lg text-[#6B7280]">— Robert M., Patient</p>
+          <p className="text-lg text-[#6B7280]">— Robert M.<br /> <span className="text-[16px]">Patient</span> </p>
         </div>
       </section>
 

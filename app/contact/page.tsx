@@ -41,7 +41,7 @@ export default function Contact() {
       {/* Hero Section */}
       <section className="relative h-[400px] md:h-[500px] w-full overflow-hidden">
         <Image
-          src="/professional-medical-handshake-consultation.jpg"
+          src="/assets/contact.jpg"
           alt="Contact us for healthcare services"
           fill
           className="object-cover"
@@ -95,8 +95,8 @@ export default function Contact() {
                 <div>
                   <h3 className="font-bold text-[#051E3D] mb-1">Email</h3>
                   <p className="text-[#6B7280]">
-                    <a href="mailto:info@nissihealthcare.com" className="hover:text-[#285EAB] transition-colors">
-                      info@nissihealthcare.com
+                    <a href="mailto:info@nissihomehealth.com" className="hover:text-[#285EAB] transition-colors">
+                      info@nissihomehealth.com
                     </a>
                   </p>
                 </div>
@@ -117,7 +117,7 @@ export default function Contact() {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-[#F5F7FA] rounded-lg p-8">
+          {/* <div className="bg-[#F5F7FA] rounded-lg p-8">
             <h2 className="text-2xl font-bold text-[#051E3D] mb-6">Send us a Message</h2>
 
             {submitted ? (
@@ -198,12 +198,28 @@ export default function Contact() {
                 </button>
               </form>
             )}
-          </div>
+          </div> */}
+          {/* <section className="py-16 md:py-24 px-4 bg-[#F5F7FA]"> */}
+            <div className="">
+              {/* <h2 className="text-3xl font-bold text-[#051E3D] mb-2 text-center">Find Us</h2> */}
+              <div className="w-full h-[400px] md:h-[500px] rounded-lg overflow-hidden border border-[#E5E7EB]">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.8721885123186!2d-104.6647!3d39.7278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c6e2e5e5e5e5d%3A0x5e5e5e5e5e5e5e5e!2s15290%20E%206th%20Ave%2C%20Aurora%2C%20CO%2080011!5e0!3m2!1sen!2sus!4v1234567890"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen={true}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          {/* </section> */}
         </div>
       </section>
 
       {/* Map Section */}
-      <section className="py-16 md:py-24 px-4 bg-[#F5F7FA]">
+      {/* <section className="py-16 md:py-24 px-4 bg-[#F5F7FA]">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-[#051E3D] mb-12 text-center">Find Us</h2>
           <div className="w-full h-[400px] md:h-[500px] rounded-lg overflow-hidden border border-[#E5E7EB]">
@@ -218,7 +234,7 @@ export default function Contact() {
             ></iframe>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ Section */}
       <section className="py-16 md:py-24 px-4">

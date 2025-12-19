@@ -1,10 +1,10 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Facebook, Linkedin, Twitter, Instagram } from "lucide-react"
+import { FaXTwitter, FaFacebookF, FaLinkedin, FaInstagram } from "react-icons/fa6";
 
 export function Footer() {
   return (
-    <footer className="bg-[#374151] text-white">
+    <footer className="bg-secondary text-white">
       <div className="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-3 gap-8">
         <div className="flex flex-col gap-4">
           <h3 className="font-bold text-lg">Contact</h3>
@@ -33,8 +33,8 @@ export function Footer() {
               678-267-9117
             </a>
           </div>
-          <a href="mailto:info@nissihealthcare.com" className="text-sm hover:text-[#60A5FA] transition-colors">
-            info@nissihealthcare.com
+          <a href="mailto:info@nissihomehealth.com" className="text-sm hover:text-[#60A5FA] transition-colors">
+            info@nissihomehealth.com
           </a>
         </div>
 
@@ -55,20 +55,29 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col gap-4">
+            <h3 className="font-bold text-lg">APPLY</h3>
+          <div className="flex flex-col gap-3">
+            <Link href="/apply/employment" target="_blank" className="bg-[#285EAB] w-3/6 flex justify-center text-white px-6 py-2 rounded-lg hover:bg-primary/60 transition-colors font-medium">
+              Join Our Team
+            </Link>
+            <Link href="/apply/host-home" target="_blank" className="bg-[#285EAB] w-4/6 flex justify-center text-white px-6 py-2 rounded-lg hover:bg-primary/60 transition-colors font-medium">
+              Host Home Provider
+            </Link>
+          </div>
           <h3 className="font-bold text-lg">Follow Us</h3>
           <p className="text-sm text-gray-300">Connect with us on social media for updates and health tips.</p>
           <div className="flex gap-4">
             <a href="#" aria-label="Facebook" className="hover:text-[#60A5FA] transition-colors">
-              <Facebook size={20} />
+              <FaFacebookF size={20} />
             </a>
             <a href="#" aria-label="LinkedIn" className="hover:text-[#60A5FA] transition-colors">
-              <Linkedin size={20} />
+              <FaLinkedin size={20}/>
             </a>
             <a href="#" aria-label="Twitter" className="hover:text-[#60A5FA] transition-colors">
-              <Twitter size={20} />
+              <FaXTwitter size={20}/>
             </a>
             <a href="#" aria-label="Instagram" className="hover:text-[#60A5FA] transition-colors">
-              <Instagram size={20} />
+              <FaInstagram size={20}/>
             </a>
           </div>
         </div>

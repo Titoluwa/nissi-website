@@ -2,41 +2,10 @@ import Link from "next/link"
 import Image from "next/image"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { Heart, Shield, Users, ClipboardList, Smile } from "lucide-react"
+import { Heart } from "lucide-react"
+import { SERVICES } from "@/lib/constant"
 
 export default function Home() {
-  const services = [
-    {
-      icon: Heart,
-      title: "Skilled Nursing",
-      description: "Professional nursing care including wound care, medication management, and post-operative support.",
-    },
-    {
-      icon: Users,
-      title: "Physical Therapy",
-      description: "Personalized rehabilitation programs to improve mobility and strength in the comfort of your home.",
-    },
-    {
-      icon: Shield,
-      title: "Home Health Aides",
-      description: "Compassionate assistance with daily living activities and personal care needs.",
-    },
-    {
-      icon: Smile,
-      title: "Personal Care",
-      description: "Support with bathing, dressing, grooming, and other daily personal hygiene tasks.",
-    },
-    {
-      icon: ClipboardList,
-      title: "Companionship Services",
-      description: "Meaningful social interaction and emotional support to combat isolation.",
-    },
-    {
-      icon: Shield,
-      title: "Specialized Care",
-      description: "Customized care plans tailored to your specific medical and personal needs.",
-    },
-  ]
 
   const reasons = [
     {
@@ -66,7 +35,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[500px] md:h-[600px] w-full overflow-hidden">
         <Image
-          src="/elderly-person-receiving-home-care-smiling.jpg"
+          src="/assets/care-2.jpg"
           alt="Home health care professional with patient"
           fill
           className="object-cover"
@@ -122,8 +91,8 @@ export default function Home() {
             Comprehensive healthcare solutions tailored to your needs
           </p>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service) => {
+          <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
+            {SERVICES.map((service) => {
               const Icon = service.icon
               return (
                 <div
@@ -164,7 +133,7 @@ export default function Home() {
               <div key={reason.title} className="flex gap-6">
                 <div className="flex-shrink-0">
                   <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-[#285EAB]">
-                    <Heart className="h-6 w-6 text-white" />
+                    <Heart className="h-6 w-6 text-white fill-blue-600" />
                   </div>
                 </div>
                 <div>
@@ -184,7 +153,7 @@ export default function Home() {
             "The care and compassion Nissi provided to my mother was exceptional. Their team treated her with dignity
             and respect while providing excellent professional care. I couldn't be more grateful."
           </blockquote>
-          <p className="text-lg opacity-90">— Margaret P., Family Member</p>
+          <p className="text-lg opacity-90">— Margaret P. <br /> <span className="text-sm">Family Member</span></p>
         </div>
       </section>
 
@@ -211,6 +180,20 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Join Our Team Section */}
+      {/* <section className="py-16 md:py-24 px-4 bg-[#F5F7FA]">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#051E3D] mb-6">Join Our Team</h2>
+          <p className="text-lg text-[#6B7280] mb-8">
+            Are you passionate about providing compassionate care? We're always looking for talented, dedicated
+            individuals to join our growing team of healthcare professionals.
+          </p>
+          <Link href="/apply/employment" className="bg-[#285EAB] hover:bg-[#051E3D] text-white px-8 py-3 rounded-lg font-medium transition-colors inline-block" >
+            Apply To Join Our Team
+          </Link>
+        </div>
+      </section> */}
 
       <Footer />
     </div>
