@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { SERVICES } from "@/lib/constant"
+import { SERVICES, REASONS } from "@/lib/constant"
 
 export default function Services() {
 
@@ -12,17 +12,14 @@ export default function Services() {
 
       {/* Hero Section */}
       <section className="relative h-[400px] md:h-[500px] w-full overflow-hidden">
-        <Image
-          src="/assets/services-2.jpg"
-          alt="Our comprehensive healthcare services"
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-black/30"></div>
+        <Image src="/assets/services-2.jpg" alt="Our comprehensive healthcare services" fill className="object-cover" priority/>
+        <div className="absolute inset-0 bg-black/50"></div>
         <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Comprehensive Healthcare Services</h1>
-          <p className="text-lg md:text-xl max-w-2xl">Professional care tailored to your individual needs</p>
+          <p className="text-lg md:text-xl max-w-3xl">
+            We offer personalized care, addressing unique individual needs through professional support and fostering
+            community connections. This approach ensures holistic and tailored healthcare experiences.
+          </p>
         </div>
       </section>
 
@@ -79,35 +76,10 @@ export default function Services() {
           <h2 className="text-3xl md:text-4xl font-bold text-[#051E3D] mb-12 text-center">Why Choose Our Services</h2>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {[
-              {
-                title: "Certified Professionals",
-                description: "All our caregivers are licensed, certified, and thoroughly background-checked.",
-              },
-              {
-                title: "Personalized Care Plans",
-                description: "Each service is tailored to your specific health needs and lifestyle preferences.",
-              },
-              {
-                title: "Flexible Scheduling",
-                description: "Services available 24/7 to match your schedule and changing needs.",
-              },
-              {
-                title: "Professional Support",
-                description: "Ongoing supervision, training, and quality assurance for all services.",
-              },
-              {
-                title: "Compassionate Care",
-                description: "We treat every client with dignity, respect, and genuine compassion.",
-              },
-              {
-                title: "Affordable Options",
-                description: "We work with you to find care solutions that fit your budget and needs.",
-              },
-            ].map((item) => (
-              <div key={item.title} className="bg-white rounded-lg p-6">
-                <h3 className="text-lg font-bold text-[#285EAB] mb-3">{item.title}</h3>
-                <p className="text-[#6B7280]">{item.description}</p>
+            {REASONS.map((reason) => (
+              <div key={reason.title} className="bg-white rounded-lg p-6">
+                <h3 className="text-lg font-bold text-[#285EAB] mb-3">{reason.title}</h3>
+                <p className="text-[#6B7280]">{reason.description}</p>
               </div>
             ))}
           </div>

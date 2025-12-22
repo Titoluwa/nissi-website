@@ -1039,7 +1039,7 @@ export default function EmploymentApplicationPage() {
                                 </p>
                                 <ol className="list-decimal list-inside space-y-1 ml-2">
                                     <li>Locate the downloaded PDF file (usually in your Downloads folder)</li>
-                                    <li>Compose a new email to: <strong className="text-primary">nissihomehealth@yahoo.com / nissihomehealth@gmail.com</strong></li>
+                                    <li>Compose a new email to: <strong className="text-primary">info@nissihomehealth.com</strong></li>
                                     <li>Attach the downloaded PDF to your email</li>
                                     <li>Add a brief message introducing yourself and send</li>
                                 </ol>

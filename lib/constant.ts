@@ -2,12 +2,43 @@
 import { FaTruckMedical, FaHandHoldingMedical } from "react-icons/fa6";
 import { GiLifeSupport, GiHealing } from "react-icons/gi";
 
+export const REASONS = [
+    {
+      title: "Certified Professionals",
+      description:
+        "All our caregivers are licensed, certified, and thoroughly background-checked to ensure safe and reliable care.",
+    },
+    {
+      title: "Personalized Care Plans",
+      description: "Each service is tailored to your specific health needs, goals, and lifestyle preferences.",
+    },
+    {
+      title: "Flexible Scheduling",
+      description:
+        "Our services are available 24/7 to accommodate your schedule and changing care needs.",
+    },
+    {
+      title: "Professional Support",
+      description: "We provide ongoing supervision, continuous training, and strict quality assurance across all services.",
+    },
+    {
+      title: "Compassionate Care",
+      description:
+        "We treat every client with dignity, respect, and genuine compassion at all times.",
+    },
+    {
+      title: "Affordable Options",
+      description: "We work closely with you to find care solutions that fit your budget without compromising quality.",
+    },
+] as const;
 
 export const SERVICES = [
     {
         icon: FaHandHoldingMedical,
         title: "Support Community Connection Services",
-        description: "Facilitating meaningful connections and integration within local communities.",
+        subtitle: "Our goal is to empower clients to stay socially active, connected, and confident, enriching their lives through community involvement.",
+        description: "At Nissi Home Health Care, we help clients build meaningful connections and integrate seamlessly into their local communities. Our community support services are designed to enhance social engagement, foster relationships, and promote overall well-being.",
+
         details: [
             "Community group introductions and participation",
             "Social engagement program coordination",
@@ -19,23 +50,10 @@ export const SERVICES = [
         image: "/assets/community.jpg",
     },
     {
-        icon: FaTruckMedical,
-        title: "Non-Medical Transport",
-        description: "Reliable transportation assistance for appointments, errands, and social activities.",
-        details: [
-            "Medical appointment transportation",
-            "Grocery shopping and errand assistance",
-            "Social event and activity transportation",
-            "Pharmacy and prescription pickup",
-            "Family visit coordination and transport",
-            "Safe and comfortable vehicle access",
-        ],
-        image: "/assets/transport.png",
-    },
-    {
         icon: GiLifeSupport, 
         title: "Residential Services & Support",
-        description: "Comprehensive medical and daily living support in residential settings.",
+        subtitle: "Our team works closely with clients and their families to ensure consistent, professional, and compassionate care every day.",
+        description: "At Nissi Home Health Care, we provide comprehensive medical and daily living support in residential settings, ensuring clients receive the care they need in the comfort and safety of their homes. Our residential services are tailored to promote health, independence, and overall well-being.",
         details: [
             "Medication management and administration support",
             "Chronic disease management assistance in home environment",
@@ -62,8 +80,9 @@ export const SERVICES = [
     // },
     {
         icon: GiHealing,
-        title: "Respite",
-        description: "Temporary relief and support for primary caregivers.",
+        title: "Respite Services",
+        subtitle: "Our flexible respite solutions help maintain continuity of care while supporting the well-being of primary caregivers and their loved ones.",
+        description: "At Nissi Home Health Care, we provide temporary relief and support for primary caregivers, allowing them to rest, recharge, and attend to other responsibilities. Our respite services ensure that both caregivers and clients receive the care and support they need without interruption",
         details: [
             "Short-term caregiving relief",
             "Temporary in-home support services",
@@ -73,6 +92,21 @@ export const SERVICES = [
             "Flexible scheduling for caregiver breaks",
         ],
         image: "/assets/assisted-living.png",
+    },
+    {
+        icon: FaTruckMedical,
+        title: "Non-Medical Transport",
+        subtitle: "Our caregivers ensure timely, courteous, and supportive transportation so clients can move confidently through their daily routines and community activities.",
+        description: "At Nissi Home Health Care, we provide reliable and safe transportation assistance to help clients attend appointments, run errands, and stay socially active. Our non-medical transport services are designed to promote independence, convenience, and peace of mind.",
+        details: [
+            "Medical appointment transportation",
+            "Grocery shopping and errand assistance",
+            "Social event and activity transportation",
+            "Pharmacy and prescription pickup",
+            "Family visit coordination and transport",
+            "Safe and comfortable vehicle access",
+        ],
+        image: "/assets/transport.png",
     },
 ] as const;
 

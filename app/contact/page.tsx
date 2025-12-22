@@ -50,7 +50,10 @@ export default function Contact() {
         <div className="absolute inset-0 bg-black/30"></div>
         <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Get in Touch With Us</h1>
-          <p className="text-lg md:text-xl">We're here to answer your questions and discuss your healthcare needs</p>
+          <p className="text-lg md:text-xl w-3/7">
+            We’re here to answer your questions and discuss your healthcare needs.
+            Reach out to our team today—we’re ready to support you with clear guidance and personalized care
+          </p>
         </div>
       </section>
 
@@ -69,7 +72,7 @@ export default function Contact() {
                   <p className="text-[#6B7280]">
                     15290 E 6th Ave, Unit 210D
                     <br />
-                    Aurora, CO 80011-0593
+                    Aurora, State of Colorado 80011-0593
                   </p>
                 </div>
               </div>
@@ -109,7 +112,8 @@ export default function Contact() {
                   <p className="text-[#6B7280]">
                     Available 24/7 for emergency care
                     <br />
-                    Office Hours: 8:00 AM - 6:00 PM, Monday-Friday
+                    Office hours is 9am to 5pm
+                    Office Hours: 9:00 AM - 5:00 PM, Monday-Friday
                   </p>
                 </div>
               </div>
@@ -246,20 +250,20 @@ export default function Contact() {
               {
                 question: "How do I schedule a consultation?",
                 answer:
-                  "Simply fill out our contact form or call us directly at 720-594-0593. We typically respond within 24 hours.",
+                  "Simply fill out our contact form or call us directly at 720-594-0593. We typically respond within 24 hours to schedule your consultation.",
               },
               {
                 question: "Do you accept insurance?",
-                answer: "We work with most major insurance plans. Please contact us to verify your specific coverage.",
+                answer: "Yes, we work with most major insurance plans. Please contact us to verify your specific coverage and eligibility.",
               },
               {
                 question: "Are your caregivers background-checked?",
                 answer:
-                  "Yes, all our caregivers undergo thorough background checks and are fully certified and licensed.",
+                  "Yes. All our caregivers undergo thorough background checks and are fully certified and licensed to ensure the highest standard of care.",
               },
               {
                 question: "Can services be customized?",
-                answer: "Absolutely. We develop personalized care plans based on your specific needs and goals.",
+                answer: "Absolutely. We develop personalized care plans tailored to your specific needs, preferences, and goals to ensure the best possible care.",
               },
             ].map((faq) => (
               <div key={faq.question} className="bg-[#F5F7FA] rounded-lg p-6">

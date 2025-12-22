@@ -23,7 +23,7 @@ export function Footer() {
           <p className="text-sm text-gray-300">
             15290 E 6th Ave, Unit 210D
             <br />
-            Aurora, CO 80011-0593
+            Aurora, State of Colorado 80011-0593
           </p>
           <div className="flex gap-4">
             <a href="tel:720-594-0593" className="text-sm hover:text-[#60A5FA] transition-colors">
