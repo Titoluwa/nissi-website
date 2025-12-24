@@ -2,7 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { Heart } from "lucide-react"
+import { ChevronRight, Heart } from "lucide-react"
 import { SERVICES } from "@/lib/constant"
 import { Button } from "@/components/ui/button"
 import { REASONS } from "@/lib/constant"
@@ -106,7 +106,8 @@ export default function Home() {
               href="/services"
               className="bg-[#285EAB] hover:bg-[#051E3D] text-white px-8 py-3 rounded-lg font-medium transition-colors inline-block"
             >
-              View All Services
+              Learn More 
+              {/* <ChevronRight/>  */}
             </Link>
           </div>
         </div>
