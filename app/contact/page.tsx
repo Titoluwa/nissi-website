@@ -50,7 +50,7 @@ export default function Contact() {
         <div className="absolute inset-0 bg-black/30"></div>
         <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Get in Touch With Us</h1>
-          <p className="text-lg md:text-xl w-3/7">
+          <p className="text-lg md:text-xl sm:w-5/7">
             We’re here to answer your questions and discuss your healthcare needs.
             Reach out to our team today—we’re ready to support you with clear guidance and personalized care
           </p>
@@ -72,7 +72,9 @@ export default function Contact() {
                   <p className="text-[#6B7280]">
                     15290 E 6th Ave, Unit 210D
                     <br />
-                    Aurora, State of Colorado 80011-0593
+                    Aurora, State of Colorado 
+                    <br />
+                    80011-0593
                   </p>
                 </div>
               </div>
@@ -110,10 +112,12 @@ export default function Contact() {
                 <div>
                   <h3 className="font-bold text-[#051E3D] mb-1">Hours</h3>
                   <p className="text-[#6B7280]">
-                    Available 24/7 for emergency care
-                    <br />
-                    Office hours is 9am to 5pm
-                    Office Hours: 9:00 AM - 5:00 PM, Monday-Friday
+                    {/* Available 24/7 for emergency care */}
+                    {/* <br /> */}
+                    {/* Office hours is 9am to 5pm */}
+                    9:00 AM - 5:00 PM, 
+                    <br/>
+                    Monday-Friday
                   </p>
                 </div>
               </div>

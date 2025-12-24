@@ -11,7 +11,7 @@ export function Header() {
   return (
     <>
       {/* Top Bar */}
-      <div className="fixed top-0 left-0 right-0 z-50 bg-[#051E3D] text-white py-2 px-4">
+      {/* <div className="fixed top-0 left-0 right-0 z-50 bg-[#051E3D] text-white py-2 px-4">
         <div className="max-w-6xl mx-auto flex justify-between items-center text-sm">
           <div className="flex gap-6">
             <a href="tel:720-594-0593" className="hover:text-[#60A5FA] transition-colors">
@@ -25,10 +25,36 @@ export function Header() {
             info@nissihomehealth.com
           </a>
         </div>
+      </div> */}
+
+      <div className="fixed top-0 left-0 right-0 z-50 bg-[#051E3D] text-white py-2 px-4">
+        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center text-sm gap-2 sm:gap-0">
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-6">
+            <a 
+              href="tel:720-594-0593" 
+              className="hover:text-[#60A5FA] transition-colors whitespace-nowrap"
+            >
+              720-594-0593
+            </a>
+            <a 
+              href="tel:678-267-9117" 
+              className="hover:text-[#60A5FA] transition-colors whitespace-nowrap"
+            >
+              678-267-9117
+            </a>
+          </div>
+          <a 
+            href="mailto:info@nissihomehealth.com" 
+            className="hover:text-[#60A5FA] transition-colors text-center sm:text-left whitespace-nowrap"
+          >
+            info@nissihomehealth.com
+          </a>
+        </div>
       </div>
 
+
       {/* Main Header - Pushed down by fixed top bar */}
-      <header className="bg-white border-b border-[#E5E7EB] pt-10"> {/* Added pt-14 for top padding */}
+      <header className="bg-white border-b border-[#E5E7EB] sm:pt-10 pt-15"> {/* Added pt-14 for top padding */}
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
           <Link href="/" className="flex items-center gap-2 flex-shrink-0">
             <div className="w-12 h-12 relative">

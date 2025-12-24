@@ -23,7 +23,9 @@ export function Footer() {
           <p className="text-sm text-gray-300">
             15290 E 6th Ave, Unit 210D
             <br />
-            Aurora, State of Colorado 80011-0593
+            Aurora, State of Colorado 
+            <br /> 
+            80011-0593
           </p>
           <div className="flex gap-4">
             <a href="tel:720-594-0593" className="text-sm hover:text-[#60A5FA] transition-colors">
@@ -55,12 +57,12 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col gap-4">
-            <h3 className="font-bold text-lg">APPLY</h3>
-          <div className="flex flex-col gap-3">
-            <Link href="/apply/employment" target="_blank" className="bg-[#285EAB] w-3/6 flex justify-center text-white px-6 py-2 rounded-lg hover:bg-primary/60 transition-colors font-medium">
+          <h3 className="font-bold text-lg">APPLY</h3>
+          <div className="flex flex-col gap-3 w-3/4">
+            <Link  href="/apply/employment"  target="_blank"  className="bg-[#285EAB] w-full sm:w-auto flex justify-center text-white px-6 py-2 rounded-lg hover:bg-primary/60 transition-colors font-medium">
               Join Our Team
             </Link>
-            <Link href="/apply/host-home" target="_blank" className="bg-[#285EAB] w-4/6 flex justify-center text-white px-6 py-2 rounded-lg hover:bg-primary/60 transition-colors font-medium">
+            <Link href="/apply/host-home" target="_blank" className="bg-[#285EAB] w-full sm:w-auto flex justify-center text-white px-6 py-2 rounded-lg hover:bg-primary/60 transition-colors font-medium">
               Host Home Provider
             </Link>
           </div>
